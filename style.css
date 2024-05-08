@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(140deg, red,blue);
+    color: white;
+
+}
+h1{
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 95px rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+
+}
+
+.timer{
+    background: rgba(255, 255, 255,0.15);
+    padding: 30px;
+    margin: 0 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100px;
+    max-width: 160px;
+    height: 100%;
+    transition: 0.8s ease-in-out;
+}
+.timer .time{
+    font-size: 48px;
+    font-weight: 700;
+}
+.timer .label{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px white;
+}
+.timer:hover{
+    background: #000;
+}
+@media screen and (max-width:1024px){
+    h1{
+        font-size: 38px;
+    }
+    .countdown{
+        flex-wrap: wrap;
+    }
+    .timer{
+        max-height: 130px;
+        margin: 20px;
+    }
+
+}
